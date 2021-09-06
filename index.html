@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Input Data
+{% endblock %}
+
+{% block body %}
+    <h1>Input Data</h1>
+    <form method="post">
+        <label for="company" class="form-control">Company:</label>
+        <input type="text" name="company" id="company" class="form-control" value="TWTR">
+        <label for="start_training_date" class="form-control">Start Training Date:</label>
+        <input type="date" name="start_training_date" id="start_training_date" class="form-control" value="2012-01-01">
+        <label for="end_training_date" class="form-control">End Training Date:</label>
+        <input type="date" name="end_training_date" id="end_training_date" class="form-control" value="2020-01-01">
+        <label for="start_testing_date" class="form-control">Start Testing Date:</label>
+        <input type="date" name="start_testing_date" id="start_testing_date" class="form-control" value="2020-01-01">
+        <label for="prediction_days" class="form-control">Prediction days:</label>
+        <input type="number" name="prediction_days" id="prediction_days" class="form-control" value="60">
+        <label for="number_of_neurons_of_first_layer" class="form-control">Number of neurons in first layer:</label>
+        <input type="number" name="number_of_neurons_of_first_layer" id="number_of_neurons_of_first_layer" class="form-control" value="50">
+        <label for="number_of_neurons_of_second_layer" class="form-control">Number of neurons in second layer:</label>
+        <input type="number" name="number_of_neurons_of_second_layer" id="number_of_neurons_of_second_layer" class="form-control" value="50">
+        <label for="number_of_neurons_of_third_layer" class="form-control">Number of neurons in third layer:</label>
+        <input type="number" name="number_of_neurons_of_third_layer" id="number_of_neurons_of_third_layer" class="form-control" value="50">
+        <label for="number_of_neurons_of_fourth_layer" class="form-control">Number of neurons in fourth layer:</label>
+        <input type="number" name="number_of_neurons_of_fourth_layer" id="number_of_neurons_of_fourth_layer" class="form-control" value="1">
+        <label for="number_of_epochs" class="form-control">Number of epochs:</label>
+        <input type="number" name="number_of_epochs" id="number_of_epochs" class="form-control" value="25">
+        <label for="batch_size" class="form-control">Batch size:</label>
+        <input type="number" name="batch_size" id="batch_size" class="form-control" value="32">
+        <input type="submit" class="btn btn-success" value="Make prediction">
+    </form>
+{% endblock %}
